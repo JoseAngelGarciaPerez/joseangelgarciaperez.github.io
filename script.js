@@ -4,16 +4,20 @@ const links = document.querySelectorAll("nav a");
 async function loadPage(page) {
   content.classList.add("hidden");
 
+  // Espera la animación de salida antes de cambiar el HTML (300ms)
+  await new Promise(resolve => setTimeout(resolve, 300));
+
   try {
     const response = await fetch(`pages/${page}.html`);
     const html = await response.text();
-
+    content.innerHTML = html;
+    
     setTimeout(() => {
-      content.innerHTML = html;
+      
       content.classList.remove("hidden");
-    }, 300);
+    }, 10);
   } catch (err) {
-    content.innerHTML = "<p>Error al cargar la página.</p>";
+    content.innerHTML = "<h2>Error al cargar la página</h2><p>No se pudo cargar la página</p>";
     content.classList.remove("hidden");
   }
 }
