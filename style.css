@@ -1,0 +1,67 @@
+#content {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#content.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body {
+  background-color: rgb(58, 58, 58);
+}
+
+.navbar {
+  background-color: rgb(34, 34, 34);
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
+}
+
+.navbar-brand:hover {
+  color: rgb(255, 219, 61);
+}
+
+.navbar h3 {
+  color: orange;
+}
+
+.navbar h3:hover {
+  color: orange;
+}
+
+.nav-item .nav-link {
+  color: rgb(255, 219, 61);
+  font-weight: 500;
+  font-size: larger;
+}
+
+.nav-item .nav-link:hover {
+  color: rgb(255, 229, 116);
+  border-bottom: 1px solid rgb(255, 229, 116);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link i {
+  margin-left: 0.5em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover i {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar-toggler {
+  color: rgb(255, 219, 61);
+}
