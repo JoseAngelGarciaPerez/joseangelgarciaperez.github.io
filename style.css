@@ -38,6 +38,7 @@ body {
   color: rgb(255, 219, 61);
   font-weight: 500;
   font-size: larger;
+  margin-right: 5px;
 }
 
 .nav-item .nav-link:hover {
@@ -55,6 +56,11 @@ body {
   opacity: 0;
   transform: translateX(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link.active i {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .nav-link:hover i {
