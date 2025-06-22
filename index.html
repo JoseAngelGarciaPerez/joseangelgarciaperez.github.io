@@ -32,6 +32,16 @@
     <link href="assets/css/theme.min.css" rel="stylesheet" />
 
     <style>
+      #content {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+
+      #content.hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
       body {
         background-color: rgb(58, 58, 58);
       }
@@ -50,11 +60,11 @@
         color: rgb(255, 219, 61);
       }
 
-      .navbar a {
+      .navbar h3 {
         color: orange;
       }
 
-      .navbar a:hover {
+      .navbar h3:hover {
         color: orange;
       }
 
@@ -86,10 +96,9 @@
         transform: translateX(0);
       }
 
-      .navbar-toggler{
+      .navbar-toggler {
         color: rgb(255, 219, 61);
       }
-
     </style>
   </head>
 
@@ -97,7 +106,7 @@
     <section id="navegacion">
       <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <p class="navbar-brand" data-page="home"> José Ángel García Pérez </p>
+          <h3 class="navbar-brand" data-page="home">José Ángel García Pérez</h3>
           <button
             class="navbar-toggler"
             type="button"
@@ -141,11 +150,7 @@
       </nav>
     </section>
 
-
-    <div id="content">
-    </div>
-
-
+    <div id="content"></div>
   </body>
 
   <!-- Bootstrap -->
