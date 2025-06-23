@@ -83,6 +83,19 @@ body p {
   color: rgb(255, 219, 61);
 }
 
+a{
+  color: orange;
+}
+
+a:hover{
+  color: rgb(255, 219, 61);
+}
+
+.card{
+  background-color: rgb(34, 34, 34); 
+  box-shadow: -4px 4px 4px rgb(0, 0, 0);
+}
+
 #footer{
   margin-top: auto;
 }
