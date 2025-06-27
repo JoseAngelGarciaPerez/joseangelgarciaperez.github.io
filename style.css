@@ -96,6 +96,59 @@ a:hover{
   box-shadow: -4px 4px 4px rgb(0, 0, 0);
 }
 
+.carousel-item img{
+  max-height: 500px;
+  object-fit: cover;
+  object-position: 0% 20%;
+}
+
+.carousel-caption{
+  text-shadow: 
+  0px 0px 6px black,
+  8px 8px 4px #000000,
+  10px 10px 4px #000000,
+  12px 12px 4px #000000;
+
+}
+
+.carousel-caption h1{
+  font-size: 100px;
+  color: rgb(255, 248, 157);
+  font-weight: 700;
+}
+
+.carousel-caption h3{
+  color: aliceblue;
+  text-shadow: 
+  0px 0px 6px black,
+  3px 3px 4px #000000,
+  6px 6px 4px #000000,
+  9px 9px 4px #000000;
+}
+
+.accordion {
+  --bs-accordion-bg: rgb(41, 41, 41);        /* Fondo del contenedor */
+  --bs-accordion-color: aliceblue;     /* Color del texto */
+  --bs-accordion-border-color: #888; /* Color de borde */
+  color: aliceblue;
+}
+
+/* Cuando un ítem está activo (botón sin .collapsed) */
+.accordion-button:not(.collapsed) {
+  background-color: orange;        /* Color de fondo del header activo */
+  color: rgb(255, 248, 157);   /* Color del texto activo */
+  text-shadow: 0 0 3px #000000;                   
+}
+
+.accordion-button.collapsed { 
+  color: aliceblue;                      /* Color del texto activo */
+}
+
+.accordion-button.collapsed:hover{
+  color: orange;
+}
+
+
 #footer{
   margin-top: auto;
 }
